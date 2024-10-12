@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Manrope" />
+  
+  <link rel="stylesheet" href="./css/auth.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./js/auth.js" defer></script>
+  <title>Login/Register</title>
+</head>
+
+<body class="bodypic">
+  <main class="card">
+    <!-- Left Container -->
+    <div class="container outline bg-accent" id="loginContainer">
+      <div class="login-content" id="loginContent">
+        <p style="color:white" class="word-size">Login</p>
+      </div>
+      <div class="register-content visually-hidden" id="registerContent">
+        <form id="registerForm">
+          <div class="form-control">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="registerEmailInput" class="form-input">
+          </div>
+          <div class="form-control">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="registerPasswordInput" autocomplete="new-password"
+              class="form-input">
+            <span class="material-symbols-outlined visibility-icon" data-belongs="registerPassword"
+              onclick="togglePasswordVisibility('registerPasswordInput', 'registerPassword')">
+              visibility
+            </span>
+            <span class="material-symbols-outlined visibility-icon visually-hidden" data-belongs="registerPassword"
+              onclick="togglePasswordVisibility('registerPasswordInput', 'registerPassword')">
+              visibility_off
+            </span>
+          </div>
+          <div class="form-control">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="registerConfirmPasswordInput" autocomplete="new-password"
+              class="form-input">
+            <span class="material-symbols-outlined visibility-icon" data-belongs="registerConfirmPassword"
+              onclick="togglePasswordVisibility('registerConfirmPasswordInput', 'registerConfirmPassword')">
+              visibility
+            </span>
+            <span class="material-symbols-outlined visibility-icon visually-hidden"
+              data-belongs="registerConfirmPassword"
+              onclick="togglePasswordVisibility('registerConfirmPasswordInput', 'registerConfirmPassword')">
+              visibility_off
+            </span>
+          </div>
+          <div class="form-control">
+            <input type="submit" value="Register" class="btn btn-primary">
+          </div>
+        </form>
+        <div>
+          <p>Already have an account? <span class="auth-swap-button" id="loginSwap">Login now</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Right Container -->
+    <div class="container clr-background" id="registerContainer">
+      <div class="login-content"  id="loginContent">
+        <form id="loginForm">
+          <div class="form-control">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="loginEmailInput" class="form-input">
+          </div>
+          <div class="form-control">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="loginPasswordInput" autocomplete="current-password"
+              class="form-input">
+            <span class="material-symbols-outlined visibility-icon" data-belongs="loginPassword"
+              onclick="togglePasswordVisibility('loginPasswordInput', 'loginPassword')">
+              visibility
+            </span>
+            <span class="material-symbols-outlined visibility-icon visually-hidden" data-belongs="loginPassword"
+              onclick="togglePasswordVisibility('loginPasswordInput', 'loginPassword')">
+              visibility_off
+            </span>
+          </div>
+          <div class="form-control">
+            <input type="submit" value="Login" class="btn btn-primary">
+          </div>
+        </form>
+        <div>
+          <p>Do not have an account? <span class="auth-swap-button" id="registerSwap">Register now</span></p>
+        </div>
+      </div>
+      <div class="register-content visually-hidden" id="registerContent">
+        <p style="color:white" class="word-size" >Register</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.onreadystatechange = () => {
+      const loginContainer = document.getElementById("loginContainer")
+      const registerContainer = document.getElementById("registerContainer")
+
+      const loginContents = document.getElementsByClassName("login-content")
+      const registerContents = document.getElementsByClassName("register-content")
+
+      const loginSwap = document.getElementById("loginSwap")
+      const registerSwap = document.getElementById("registerSwap")
+
+      loginSwap.onclick = () => {
+        for (let i = 0; i < loginContents.length; i++) {
+          loginContents[i].classList.remove("visually-hidden")
+        }
+        for (let i = 0; i < loginContents.length; i++) {
+          registerContents[i].classList.add("visually-hidden")
+        }
+
+        loginContainer.classList.add("bg-accent")
+        registerContainer.classList.remove("bg-accent")
+
+        loginContainer.classList.remove("clr-background")
+        registerContainer.classList.add("clr-background")
+      }
+
+      registerSwap.onclick = () => {
+        for (let i = 0; i < loginContents.length; i++) {
+          registerContents[i].classList.remove("visually-hidden")
+        }
+        for (let i = 0; i < loginContents.length; i++) {
+          loginContents[i].classList.add("visually-hidden")
+        }
+
+        loginContainer.classList.remove("bg-accent")
+        registerContainer.classList.add("bg-accent")
+
+        loginContainer.classList.add("clr-background")
+        registerContainer.classList.remove("clr-background")
+      }
+    }
+
+    function togglePasswordVisibility(inputId, belongsTo) {
+      const passwordInput = document.getElementById(inputId);
+      const visibilityIcons = document.querySelectorAll(`.visibility-icon[data-belongs="${belongsTo}"]`);
+
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        visibilityIcons[0].classList.add('visually-hidden');
+        visibilityIcons[1].classList.remove('visually-hidden');
+      } else {
+        passwordInput.type = 'password';
+        visibilityIcons[0].classList.remove('visually-hidden');
+        visibilityIcons[1].classList.add('visually-hidden');
+      }
+    }
+  </script>
+</body>
+
+</html>

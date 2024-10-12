@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./public/GoodGym.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Contact Us Page - Get in Touch with Us" />
+  <link rel="apple-touch-icon" href="./public/logo192.png" />
+  <link rel="manifest" href="./public/manifest.json" />
+
+  <link href="./css/fontawesome/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/animate.css" rel="stylesheet" />
+  <link href="./css/font-body.css" rel="stylesheet" />
+  <link href="./css/header-footer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/contact.css" />
+
+  <!-- CUSTOM CSS -->
+  <style>
+    .container-fluid.slide {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .abouthead {
+      font-size: 36px;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .abouttext {
+      font-size: 18px;
+      color: #6c757d;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .heading {
+      font-size: 28px;
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    form .form-group {
+      margin-bottom: 20px;
+    }
+
+    form .form-control {
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    form .btn-primary {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    form .text-center {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .form-control {
+        font-size: 14px;
+      }
+
+      .heading {
+        font-size: 24px;
+      }
+
+      .btn-primary {
+        font-size: 16px;
+      }
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #fff;
+      /* Ensure header background is white or your preferred color */
+    }
+
+    .main_nav_mb {
+      background-color: #fff;
+      /* Adjust to the color you want */
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      color: #333;
+      margin-right: 20px;
+    }
+
+    .navbar-nav .nav-link.active {
+      color: #ff4301;
+    }
+
+    .slide {
+      background-color: #ff4301;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .slide h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .slide p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .heading {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      border-radius: 0.5rem;
+      border-color: #ddd;
+    }
+
+    .btn-primary {
+      background-color: #ff4301;
+      border-color: #ff4301;
+      border-radius: 0.5rem;
+      padding: 12px 24px;
+      /* Increased padding for a larger button */
+      font-size: 1.1rem;
+      /* Slightly larger text */
+    }
+
+    .btn-primary:hover {
+      background-color: #e13b00;
+      border-color: #e13b00;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      /* Aligns content to the right */
+    }
+
+
+    .map iframe {
+      border-radius: 0.5rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #ff4301;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer_social i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav {
+        margin-top: 15px;
+      }
+    }
+
+    .modal-content {
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-footer {
+      border-top: none;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .modal-body p {
+      font-size: 16px;
+    }
+  </style>
+  <title>Contact Us | BEFIT</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column m-0 w-100 maincon">
+    <header>
+      <div class="containe m-0 p-0 mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light main_nav_mb">
+          <a class="navbar-brand company_name" href="index.html">BE<span style="color: #ff4301;">FIT</span></a>
+
+          <button class="outside outside_btn_nav_qobi">JOIN US</button>
+          <button class="navbar-toggler nav_btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav align-items-center">
+              <a class="nav-item nav-link" href="services.html">Services</a>
+              <a class="nav-item nav-link" href="plans.html">Plans</a>
+              <a class="nav-item nav-link" href="bmipage.html">BMI Calculator</a>
+              <a class="nav-item nav-link" href="blog-1.html ">Blog 1</a>
+              <a class="nav-item nav-link" href="blog-2.html ">Blog 2</a>
+              <a class="nav-item nav-link" href="blog-3.html ">Blog 3</a>
+              <a class="nav-item nav-link" href="about.html">About Us</a>
+              <a class="nav-item nav-link" href="Contact.html">Contact Us</a>
+              <a class="nav-item nav-link" href="auth.html">Login/Register</a>
+              <button class="inside_btn_nav_qobi" onclick="location.href='joinus.html'">JOIN US</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-fluid slide">
+      <div class="container">
+        <h1 class="abouthead font-weight-normal wow pulse">CONTACT US</h1>
+        <p class="abouttext wow bounce">
+          We’d love to hear from you! <br />Get in touch with us for any inquiries or support.
+        </p>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="heading">Send Us a Message</h2>
+          <p>Leave your enquiries here, we will contact you soon!</p>
+          <form action="#" method="post" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Message Sent</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for contacting us. We will get back to you soon.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-auto w-100 m-0 p-0 py-5 footer_margin footer_margin">
+      <div class="container m-0 p-0 mx-auto">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="m-0 p-0"></h1> <b><span style="color: #ff8401;">GoodGym</span></h1></b>
+            <p>
+            </p>
+            <h2 class="footer-logo m-0 p-0">Operating Hours</h2>
+            <p>
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-clock clock-icon" id="clock-icon-1"></i>
+                <span class="operating-time" id="time-1">Monday - Friday: 7:30am - 9:00pm</span>
+              </li>
+              <p>
+
+              </p>
+              <li>
+                <i class="fas fa-clock clock-icon" id="clock-icon-2"></i>
+                <span class="operating-time" id="time-2">Saturday - Sunday: 7:30am - 3:00pm</span>
+              </li>
+            </ul>
+            <p>
+            <div class="text-center text-white">
+              © 2024 Copyright: GoodGym (Assignment)
+            </div>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Our Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.hmtl">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="bmipage.html">BMI Calculator</a></li>
+              <li><a href="blog-1.html">Blog 1</a></li>
+              <li><a href="blog-2.html">Blog 2</a></li>
+              <li><a href="blog-3.html">Blog 3</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="Contact.html">Contact Us</a></li>
+              <li><a href="auth.html">Login/Register</a></li>
+              <li><a href="joinus.html">Join Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p>100 TAMAN KUALA LUMPUR 52000</p>
+            <p>Email: info@GoodGym.com</p>
+            <p>Phone: +234 123 456 789</p>
+            <div class="social-icons mt-2 pt-2 ssk-group">
+              <a href="#" class="ssk ssk-twitter"></a>
+              <a href="#" class="ssk ssk-facebook"></a>
+              <a href="#" class="ssk ssk-youtube"></a>
+              <a href="#" class="ssk ssk-instagram"></a>
+              <a href="#" class="ssk ssk-pinterest"></a>
+            </div>
+            <p>
+
+            </p>
+            <h3>Our Newsletter</h3>
+            <p>
+            </p>
+            <div class="subscribe-container">
+              <input type="email" id="email-input" placeholder="Your Email Here" class="form-control" />
+              <button id="subscribe-button">Subscribe</button>
+            </div>
+            <div id="emailModal" class="modal" style="display:none;">
+              <div class="modal-content">
+                <div id="modal-icon" class="modal-icon">
+                  <i class="fas fa-exclamation-circle" style="font-size: 48px; color: orange;"></i>
+                </div>
+                <h2>Are you sure you want to subscribe?</h2>
+                <p>Please confirm your subscription.</p>
+                <div class="modal-buttons">
+                  <button id="confirm-btn">Confirm Subscription</button>
+                  <button id="cancel-btn">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Success Message Modal -->
+          <div id="successModal" class="modal" style="display:none;">
+            <div class="modal-content">
+              <div class="modal-icon">
+                <i class="fas fa-check-circle" style="font-size: 48px; color: green;"></i>
+              </div>
+              <h2>Your response is saved!</h2>
+              <p>Thanks for your subscribed. We will Contact you as soon as possible</p>
+              <div class="modal-buttons">
+                <button id="ok-btn">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  </div>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- WOW.js -->
+  <script src="./js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Contact Form Script with Local Storage and Cookies -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Save to Local Storage
+      localStorage.setItem('contactName', name);
+      localStorage.setItem('contactEmail', email);
+      localStorage.setItem('contactMessage', message);
+
+      // Set a cookie to remember form submission
+      document.cookie = `submitted=true;path=/;max-age=${30 * 24 * 60 * 60};`;
+
+      // Display the confirmation modal
+      $('#confirmationModal').modal('show');
+
+      // Clear the form fields after submission
+      this.reset();
+    });
+
+    // Check if the user has already submitted the form using cookies
+    function checkFormSubmission() {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.startsWith('submitted=')) {
+          const submitted = cookie.split('=')[1];
+          if (submitted === 'true') {
+            alert('You have already submitted the form.');
+          }
+        }
+      }
+    }
+
+    // Check form submission on page load
+    document.addEventListener('DOMContentLoaded', checkFormSubmission);
+  </script>
+
+  <!--Live Chat-->
+  <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script>
+  <script>
+    window.start.init({
+      title: "<strong>Good Fitness </strong><br> is ready to serve you✌️",
+      message: "How may we help you? Just send us a message now to get any services you need.",
+      color: "#1C86FA",
+      position: "left",
+      placeholder: "Enter your message",
+      withText: "Write with",
+      viaWhatsapp: "Or write us directly via Whatsapp",
+      gty: "Go to your",
+      awu: "and write us",
+      connect: "Connect now",
+      button: "Here to reach us!",
+      device: "everywhere",
+      logo: "images/image 22.png",
+      person: "images/image 22.png",
+      services: [{ "name": "whatsapp", "content": "+60189588917" }]
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./public/GoodGym.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="GoodGym - Your Fitness Companion. Join us for the best workout plans, professional trainers, and state-of-the-art equipment.">
+  <meta name="keywords" content="GoodGym, Fitness, Workout, Gym, Health, Trainers, Equipment, BMI Calculator">
+  <meta name="author" content="GoodGym Team">
+  <title>Home</title>
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "GoodGym",
+        "url": "http://www.goodgym.com",
+        "logo": "http://www.goodgym.com/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/goodgym",
+          "https://twitter.com/goodgym",
+          "https://www.instagram.com/goodgym"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+234123456789",
+          "contactType": "Customer service"
+        }
+      }
+      </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <link rel="stylesheet" href="social-share-kit-1.0.15/dist/css/social-share-kit.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share-kit@1.0.16/dist/social-share-kit.css">
+  <script src="https://cdn.jsdelivr.net/npm/social-share-kit@1.0.16/dist/social-share-kit.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/social-share-kit@1.0.16/dist/social-share-kit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Manrope" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/landingPage.css" />
+  <link href="./css/animate.css" rel="stylesheet" />
+  <link href="./css/font-body.css" rel="stylesheet" />
+  <link href="./css/header-footer.css" rel="stylesheet" />
+  <style>
+    .carousel-item img {
+      max-height: 500px;
+      /* Adjust the max-height as needed */
+      object-fit: cover;
+    }
+
+    .content-section {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      background-color: #f5f7f9;
+    }
+
+    .text-content {
+      padding: 20px;
+    }
+
+    .text-content h2 {
+      font-weight: bold;
+    }
+
+    .btn-read-more {
+      background-color: #ff4301;
+      /* Set button background color */
+      border: 1px solid #ff4301;
+      /* Make the border match the background */
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      /* Set text color for contrast */
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-read-more:hover {
+      background-color: #0031e0;
+      /* Darker color on hover */
+      color: white;
+    }
+
+    .btn-read-more:active {
+      background-color: #c93400;
+      /* Even darker on click */
+      color: white;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .reverse-row {
+      flex-direction: row-reverse;
+    }
+
+    .section-heading {
+      text-align: left;
+      margin: 40px 0;
+      background-color: #f5f7f9;
+      /* Background color for the section */
+      padding: 20px;
+      /* Padding around the text */
+      border-radius: 8px;
+      /* Rounded corners for the section */
+    }
+
+    .subheading {
+      font-size: 14px;
+      color: rgb(0, 81, 128);
+      /* Color for the subheading */
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      /* Space between subheading and heading */
+      text-transform: uppercase;
+      /* Uppercase text for subheading */
+      border-bottom: 1px dotted rgba(0, 128, 109, 0.825);
+      /* Dotted line under subheading */
+      display: inline-block;
+      /* Aligns subheading with text baseline */
+    }
+
+    .main-heading {
+      font-size: 32px;
+      color: black;
+      /* Color for the main heading */
+      font-weight: bold;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      background-color: #1c1c1e;
+      color: #fff;
+      padding: 20px 0;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    footer h1 {
+      font-size: 24px;
+      color: #ff4301;
+    }
+
+    footer h4 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    footer .social-icons a:hover {
+      color: #ff4301;
+    }
+
+    footer form {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    footer form input {
+      flex: 1;
+      padding: 5px;
+      border: none;
+      border-radius: 3px 0 0 3px;
+    }
+
+    footer form button {
+      background-color: #ff4301;
+      border: none;
+      padding: 5px 15px;
+      color: #fff;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+
+    footer form button:hover {
+      background-color: #ff6501;
+    }
+
+    .ssk-group a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .ssk-facebook {
+      background-color: #3b5998;
+    }
+
+    .ssk-twitter {
+      background-color: #1da1f2;
+    }
+
+    .ssk-pinterest {
+      background-color: #bd081c;
+    }
+
+    .ssk-linkedin {
+      background-color: #0077b5;
+    }
+
+    .ssk-group a:hover {
+      opacity: 0.8;
+    }
+
+    .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .ssk-group a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 20px;
+      color: #ffffff;
+      /* Set the icon color */
+      transition: color 0.3s ease;
+    }
+
+    .ssk-group a:hover {
+      color: #ff4301;
+      /* Highlight color on hover */
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .fa-clock {
+      color: #ff4301;
+      font-size: 1.5em;
+      margin-right: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .fa-clock:hover {
+      color: #1e90ff;
+    }
+
+    .subscribe-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .subscribe-container input[type="email"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px 0 0 4px;
+      border: 1px solid #ccc;
+    }
+
+    .subscribe-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 0 4px 4px 0;
+      border: 1px solid #007bff;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+    .subscribe-container button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Modal Background */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      color: black;
+    }
+
+    .modal-content h2 {
+      color: black;
+      /* Explicitly set the color for the heading */
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    /* Modal Paragraph */
+    .modal-content p {
+      color: black;
+      /* Explicitly set the color for the paragraph */
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* Modal Icon */
+    .modal-icon {
+      margin-bottom: 20px;
+    }
+
+    /* Modal Buttons */
+    .modal-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .modal-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #confirm-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #cancel-btn {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    #ok-btn {
+      background-color: #007bff;
+      color: white;
+      width: 100px;
+    }
+
+    /* Default light theme */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    header,
+    footer {
+      background-color: #f8f9fa;
+      /* light grey background */
+      color: black;
+    }
+
+    /* Light Theme (default) */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    header,
+    footer {
+      background-color: white;
+      color: black;
+    }
+
+    .clock-icon {
+      color: #ff4301;
+      /* Default icon color */
+    }
+
+    .operating-time {
+      color: black;
+    }
+
+    /* Dark Theme */
+    body.dark-theme {
+      background-color: black;
+      color: white;
+    }
+
+    header.dark-theme,
+    footer.dark-theme {
+      background-color: black;
+      color: white;
+    }
+
+    a.dark-theme,
+    button.dark-theme {
+      color: white;
+    }
+
+    body.light-theme {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.dark-theme {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    header.light-theme,
+    footer.light-theme {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    header.dark-theme,
+    footer.dark-theme {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+
+    /* Additional styles for links, buttons, etc. */
+    a.light-theme,
+    button.light-theme {
+      color: #007bff;
+    }
+
+    a.dark-theme,
+    button.dark-theme {
+      color: #ffffff;
+    }
+
+    .cardio-section.light-theme h2,
+    .cardio-section.light-theme p {
+      color: #000000;
+    }
+
+    .cardio-section.dark-theme h2,
+    .cardio-section.dark-theme p {
+      color: #ffffff;
+    }
+
+    body.dark-theme p,
+    body.dark-theme h2 {
+      color: #ffffff !important;
+    }
+
+    /* Light Theme */
+    body.light-theme {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.light-theme .clock-icon,
+    body.light-theme .operating-time {
+      color: #ffffff;
+      /* Explicitly set operating-time to white */
+    }
+
+    body.light-theme footer a,
+    body.light-theme footer p,
+    body.light-theme .social-icons a {
+      color: #000000;
+    }
+
+    /* Dark Theme */
+    body.dark-theme {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    body.dark-theme .clock-icon,
+    body.dark-theme .operating-time,
+    body.dark-theme footer a,
+    body.dark-theme footer p,
+    body.dark-theme .social-icons a {
+      color: #ffffff;
+    }
+
+    /* Light Theme */
+    body.light-theme {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.light-theme .clock-icon,
+    body.light-theme .operating-time {
+      color: #ffffff;
+      /* Explicitly set operating-time to white */
+    }
+
+    body.light-theme footer a,
+    body.light-theme footer p,
+    body.light-theme .social-icons a {
+      color: #000000;
+    }
+
+    /* Dark Theme */
+    body.dark-theme {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    body.dark-theme .clock-icon,
+    body.dark-theme .operating-time,
+    body.dark-theme footer a,
+    body.dark-theme footer p,
+    body.dark-theme .social-icons a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header starts -->
+  <header class="shadow-lg">
+    <div class="container m-0 p-0 mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light main_nav_mb">
+        <a class="navbar-brand company_name" href="index.html">GOOD<span style="color: #ff4301;">GYM</span></a>
+        <button id="theme-toggle" aria-label="Toggle dark theme">Toggle Theme</button>
+
+
+        <button class="outside outside_btn_nav_qobi">JOIN US</button>
+        <button class="navbar-toggler nav_btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav align-items-center">
+             <a class="nav-item nav-link" href="services.html">Services</a>
+            <a class="nav-item nav-link" href="plans.html">Plans</a>
+            <a class="nav-item nav-link" href="bmipage.html">BMI Calculator</a>
+            <a class="nav-item nav-link" href="blog-1.html ">Blog 1</a>
+            <a class="nav-item nav-link" href="blog-2.html ">Blog 2</a>
+            <a class="nav-item nav-link" href="blog-3.html ">Blog 3</a>
+            <a class="nav-item nav-link" href="about.html">About Us</a>
+            <a class="nav-item nav-link" href="Contact.html">Contact Us</a>
+            <a class="nav-item nav-link" href="auth.html">Login/Register</a>
+            <button class="inside_btn_nav_qobi" onclick="location.href='joinus.html'">JOIN US</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header end -->
+
+  <!-- Carousel Slider -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="carousel/1.jpg" class="d-block w-100" alt="Fitness image 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Challenge Your Limits</h5>
+          <p>Join us and get fit with the best facilities.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="carousel/2.jpg" class="d-block w-100" alt="Fitness image 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Professional Trainers</h5>
+          <p>Get guidance from certified trainers.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="carousel/3.jpg" class="d-block w-100" alt="Fitness image 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>State-of-the-Art Equipment</h5>
+          <p>Work out with the latest and greatest equipment.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="carousel/4.jpg" class="d-block w-100" alt="Fitness image 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>State-of-the-Art Equipment</h5>
+          <p>No Pain No Gain .</p>
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <div>
+      <div class="container">
+        <div class="section-heading">
+          <div class="subheading">Our Premium Services</div>
+          <div class="main-heading">Explore what we offer</div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Content-->
+    <div class="container my-5">
+      <!-- Section 1 -->
+      <div class="row content-section">
+        <div class="col-md-6 text-content">
+          <h2>Group Classes</h2>
+          <p>Join a vibrant community for fun and effective workouts.</p>
+          <a href="services.html" class="btn-read-more">Read More</a>
+        </div>
+        <div class="col-md-6 image-section">
+          <img src="images/image_9.jpg" alt="Nutrition Classes">
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="row content-section reverse-row">
+        <div class="col-md-6 text-content">
+          <h2>Yoga</h2>
+          <p>Discover the benefits of yoga with our expert instructors.</p>
+          <a href="services.html" class="btn-read-more">Read More</a>
+        </div>
+        <div class="col-md-6 image-section">
+          <img src="images/image_8.png" alt="Yoga">
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="row content-section">
+        <div class="col-md-6 text-content">
+          <h2>Personal Trainer</h2>
+          <p>Get personalized training plans and guidance from professionals.</p>
+          <a href="services.html" class="btn-read-more">Read More</a>
+        </div>
+        <div class="col-md-6 image-section">
+          <img src="images/image_12.png" alt="Personal Trainer">
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="row content-section reverse-row">
+        <div class="col-md-6 text-content">
+          <h2>Cardio</h2>
+          <p>Improve your cardiovascular health with our cardio sessions.</p>
+          <a href="services.html" class="btn-read-more">Read More</a>
+        </div>
+        <div class="col-md-6 image-section">
+          <img src="images/image_11.png" alt="Cardio">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-heading">
+        <div class="subheading">Our Facilities offer </div>
+        <div class="main-heading">Explore our Facilities Offer</div>
+      </div>
+    </div>
+    <div class="on">
+      <div class="container">
+        <div class="row d">
+          <div class="col-md-4 q wow fadeInLeft">
+            <img src="imag/image 2.png" alt="image" class="img1" />
+            <h3 class="text2 pp">FREE MEDICAL MONITORING</h3>
+          </div>
+          <div class="col-md-4 e wow fadeInUp">
+            <img src="imag/image 3.png" alt="image" class="img2" />
+            <h3 class="text2">FREE BEVERAGES</h3>
+          </div>
+          <div class="col-md-4 f wow fadeInRight">
+            <img src="imag/image 4.png" alt="image" class="img3" />
+            <h3 class="text2">FREE FITNESS CLASSES</h3>
+          </div>
+        </div>
+
+        <div class="row k">
+          <div class="col-md-4 h wow fadeInLeft">
+            <img src="imag/image 6.png" alt="image" class="img4" />
+            <p class="text2">SALT WATER POOL</p>
+          </div>
+          <div class="col-md-4 i wow fadeInUp">
+            <img src="imag/image 5.png" alt="image" class="img5" />
+            <p class="text2 ppp">VARIETY OF EQUIPMENT</p>
+          </div>
+          <div class="col-md-4 j wow fadeInRight">
+            <img src="imag/image 7.png" alt="image" class="img6" />
+            <p class="text2">FREE SHOWERS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="small">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 bn">
+            <img src="imag/image 2.png" alt="image" class="dk" />
+            <h3 class="text5">
+              FREE MEDICAL <br />
+              MONITORING
+            </h3>
+          </div>
+          <div class="col-xs-6 bc">
+            <img src="imag/image 3.png" alt="image" class="da" />
+            <h3 class="text7">FREE <br />BEVERAGES</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 bb ii">
+            <img src="imag/image 4.png" alt="image" class="db" />
+            <h3 class="text5">
+              FREE FITNESS<br />
+              CLASSES
+            </h3>
+          </div>
+          <div class="col-sm-6 bd hh">
+            <img src="imag/image 6.png" alt="image" class="de" />
+            <p class="text6">
+              SALT WATER <br />
+              POOL
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 bb">
+            <img src="imag/image 5.png" alt="image" class="db" />
+            <p class="text5">
+              VARIETY OF <br />
+              EQUIPMENT
+            </p>
+          </div>
+          <div class="col-sm-6 bd ff">
+            <img src="imag/image 7.png" alt="image" class="df" />
+            <p class="text6">
+              FREE<br />
+              SHOWERS
+            </p>
+          </div>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/onUddEsHsK4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="mt-auto w-100 m-0 p-0 py-5 footer_margin footer_margin">
+    <div class="container m-0 p-0 mx-auto">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="m-0 p-0"></h1> <b><span style="color: #ff8401;">GoodGym</span></h1></b>
+          <p>
+          </p>
+          <h2 class="footer-logo m-0 p-0">Operating Hours</h2>
+          <p>
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-clock clock-icon" id="clock-icon-1"></i>
+              <span class="operating-time" id="time-1">Monday - Friday: 7:30am - 9:00pm</span>
+            </li>
+            <p>
+
+            </p>
+            <li>
+              <i class="fas fa-clock clock-icon" id="clock-icon-2"></i>
+              <span class="operating-time" id="time-2">Saturday - Sunday: 7:30am - 3:00pm</span>
+            </li>
+          </ul>
+          <p>
+          <div class="text-center text-white">
+            © 2024 Copyright: GoodGym (Assignment)
+          </div>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Our Links</h4>
+          <ul class="list-unstyled">
+           <li><a href="index.hmtl">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="bmipage.html">BMI Calculator</a></li>
+            <li><a href="blog-1.html">Blog 1</a></li>
+            <li><a href="blog-2.html">Blog 2</a></li>
+            <li><a href="blog-3.html">Blog 3</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="auth.html">Login/Register</a></li>
+            <li><a href="joinus.html">Join Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <div class="contact-info">
+            <p><strong>Address:</strong>
+              <a href="https://www.google.com/maps/search/?api=1&query=100+TAMAN+KUALA+LUMPUR+52000" target="_blank">
+                100 TAMAN KUALA LUMPUR 52000
+              </a>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:info@GoodGym.com">info@GoodGym.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+234123456789">+234 123 456 789</a></p>
+          </div>
+
+
+          <div class="social-icons mt-2 pt-2 ssk-group">
+            <a href="#" class="ssk ssk-twitter"></a>
+            <a href="#" class="ssk ssk-facebook"></a>
+            <a href="#" class="ssk ssk-youtube"></a>
+            <a href="#" class="ssk ssk-instagram"></a>
+            <a href="#" class="ssk ssk-pinterest"></a>
+          </div>
+          <p>
+
+          </p>
+          <h3>Our Newsletter</h3>
+          <p>
+          </p>
+          <div class="subscribe-container">
+            <input type="email" id="email-input" placeholder="Your Email Here" class="form-control" />
+            <button id="subscribe-button">Subscribe</button>
+          </div>
+          <div id="emailModal" class="modal" style="display:none;">
+            <div class="modal-content">
+              <div id="modal-icon" class="modal-icon">
+                <i class="fas fa-exclamation-circle" style="font-size: 48px; color: orange;"></i>
+              </div>
+              <h2>Are you sure you want to subscribe?</h2>
+              <p>Please confirm your subscription.</p>
+              <div class="modal-buttons">
+                <button id="confirm-btn">Confirm Subscription</button>
+                <button id="cancel-btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Success Message Modal -->
+        <div id="successModal" class="modal" style="display:none;">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <i class="fas fa-check-circle" style="font-size: 48px; color: green;"></i>
+            </div>
+            <h2>Your response is saved!</h2>
+            <p>Thanks for your subscribed. We will Contact you as soon as possible</p>
+            <div class="modal-buttons">
+              <button id="ok-btn">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.clock-icon').forEach((icon, index) => {
+      icon.addEventListener('click', function () {
+        const timeElement = document.getElementById(`time-${index + 1}`);
+        const originalText = timeElement.textContent;
+        const currentTime = new Date().toLocaleString();
+
+        // Display current time and date
+        timeElement.textContent = 'Current Time: ' + currentTime;
+
+        // Revert back to original text after 5 seconds
+        setTimeout(() => {
+          timeElement.textContent = originalText;
+        }, 5000);
+      });
+    });
+  </script>
+  <script>
+    document.getElementById('subscribe-button').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Display the confirmation modal
+      const emailModal = document.getElementById('emailModal');
+      emailModal.style.display = 'flex';
+    });
+
+    document.getElementById('confirm-btn').addEventListener('click', function () {
+      const email = document.getElementById('email-input').value;
+
+      if (email) {
+        // Save to Local Storage
+        localStorage.setItem('subscribedEmail', email);
+
+        // Save to Cookies (expires in 30 days)
+        document.cookie = `subscribedEmail=${email};path=/;max-age=${30 * 24 * 60 * 60};`;
+
+        // Close the confirmation modal
+        const emailModal = document.getElementById('emailModal');
+        emailModal.style.display = 'none';
+
+        // Show success modal
+        const successModal = document.getElementById('successModal');
+        successModal.style.display = 'flex';
+
+        // Clear the input field after saving
+        document.getElementById('email-input').value = '';
+
+        // Automatically close the success modal after a few seconds or when clicking OK
+        setTimeout(() => {
+          successModal.style.display = 'none';
+        }, 5000);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+
+    document.getElementById('cancel-btn').addEventListener('click', function () {
+      const emailModal = document.getElementById('emailModal');
+      emailModal.style.display = 'none';
+    });
+
+    document.getElementById('ok-btn').addEventListener('click', function () {
+      const successModal = document.getElementById('successModal');
+      successModal.style.display = 'none';
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Check if a theme is already set in local storage
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.body.classList.add(savedTheme);
+      }
+
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const body = document.body;
+      const header = document.querySelector('header');
+      const footer = document.querySelector('footer');
+      const links = document.querySelectorAll('a, button');
+      const clockIcons = document.querySelectorAll('.clock-icon');
+      const operatingTimes = document.querySelectorAll('.operating-time');
+
+      // Load the theme preference from local storage if it exists
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        header.classList.add('dark-theme');
+        footer.classList.add('dark-theme');
+        links.forEach(link => link.classList.add('dark-theme'));
+        clockIcons.forEach(icon => icon.classList.add('dark-theme'));
+        operatingTimes.forEach(time => time.classList.add('dark-theme'));
+      } else {
+        body.classList.add('light-theme');
+        header.classList.add('light-theme');
+        footer.classList.add('light-theme');
+        links.forEach(link => link.classList.add('light-theme'));
+        clockIcons.forEach(icon => icon.classList.add('light-theme'));
+        operatingTimes.forEach(time => time.classList.add('light-theme'));
+      }
+
+      // Toggle theme on button click
+      themeToggleBtn.addEventListener('click', function () {
+        body.classList.toggle('dark-theme');
+        body.classList.toggle('light-theme');
+        header.classList.toggle('dark-theme');
+        header.classList.toggle('light-theme');
+        footer.classList.toggle('dark-theme');
+        footer.classList.toggle('light-theme');
+        links.forEach(link => link.classList.toggle('dark-theme'));
+        links.forEach(link => link.classList.toggle('light-theme'));
+        clockIcons.forEach(icon => icon.classList.toggle('dark-theme'));
+        clockIcons.forEach(icon => icon.classList.toggle('light-theme'));
+        operatingTimes.forEach(time => time.classList.toggle('dark-theme'));
+        operatingTimes.forEach(time => time.classList.toggle('light-theme'));
+
+        // Save the user's theme preference in local storage
+        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
+      });
+    });
+
+  </script>
+  <!-- Include jQuery -->
+  <script src="../js/jquery-3.5.1.min.js"></script>
+
+  <!-- Include Bootstrap -->
+  <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Include SocialShareKit JS -->
+  <script src="social-share-kit-1.0.15/dist/js/social-share-kit.min.js" defer></script>
+
+  <!-- Initialize SocialShareKit -->
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof SocialShareKit !== 'undefined') {
+        SocialShareKit.init();
+      } else {
+        console.error('SocialShareKit not loaded properly.');
+      }
+    });
+  </script>
+
+  <!-- Include WOW.js (locally or via CDN) -->
+  <script src="../js/wow.js" defer></script>
+  <!-- Or from CDN: -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script> -->
+
+  <!-- Initialize WOW.js -->
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof WOW !== 'undefined') {
+        new WOW().init();
+      } else {
+        console.error('WOW.js not loaded properly.');
+      }
+    });
+  </script>
+
+  <!-- Include other necessary scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6HJty5KVphtPhzWj9WO1clHTMGaGr0K5HxbZZKC6F4l5FO04yP"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
